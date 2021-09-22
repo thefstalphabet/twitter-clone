@@ -1,1 +1,3 @@
-// All the NPM pakages that i have used in the clone
+// All the NPM pakages that I have used in the clone
+1. Material UI
+2. Material UI icons
