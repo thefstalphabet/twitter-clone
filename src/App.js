@@ -1,19 +1,20 @@
 import './App.css';
+import Feed from './Components/Feed/Feed';
 import Sidebar from './Components/Sidebar/Sidebar';
+import Widgets from './Components/Widgets/Widgets';
 
 function App() {
   return (
     <div className="app">
-        <h1>Creating twitter clone</h1>
 
         {/* whole Side bar Component in left */}
         <Sidebar/>
 
         {/* whole Feed in Component center */}
-
+        <Feed/>
 
         {/* whole Widgets section Component in right */}
-        
+        <Widgets/>
     </div>
   );
 }
