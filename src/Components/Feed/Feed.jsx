@@ -1,5 +1,7 @@
 import React from 'react'
 import './Feed.css'
+import Post from './Post'
+import TweetBox from './TweetBox'
 
 function Feed() {
     return (
@@ -7,17 +9,16 @@ function Feed() {
             
             {/* header */}
             <div className="feed_header">
-                <h1>feed</h1>
+                <h1>Home</h1>
             </div>
 
             {/* tweet box */}
+            <TweetBox/>
 
-            {/* Post */}
-            {/* Post */}
-            {/* Post */}
-            {/* Post */}
-            {/* Post */}
-            {/* Post */}
+
+            {/* All Posts */}
+            <Post/>
+            <Post/>
 
         </div>
     )
