@@ -9,36 +9,26 @@ import VerifiedUserIcon from '@material-ui/icons/VerifiedUser';
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import PublishIcon from '@material-ui/icons/Publish';
 
-function Post() {
-
-    // displayName,
-    // userName,
-    // verified,
-    // timestamps,
-    // tweet-text,
-    // avatar,
-    // image/GIF,
-
-
+function Post({displayName, username, verified, tweet_text, avatar, image}) {
     return (
         <div className='post'>
             <div className="post_avatar">
-                <Avatar src='https://media-exp1.licdn.com/dms/image/C5603AQER-EhsuMeeVQ/profile-displayphoto-shrink_400_400/0/1631617863428?e=1637798400&v=beta&t=McdlXikJwTsa1bWLfdvtln0-84pQIs5svnrkim60Jwo' alt="Avatar"></Avatar>
+                <Avatar src={avatar} alt="Avatar"></Avatar>
             </div>
             <div className='post_body'>
                 <div className='post_header'>
                     <div className="post_headrText">
                         <h3>
-                            Akash Patel
-                            <VerifiedUserIcon className='post_badge'/>
-                            <span className="post_headrSpecial">@thefstalphabet</span>
+                            {displayName}
+                            { verified && <VerifiedUserIcon className='post_badge'/>}
+                            <span className="post_headrSpecial">@{username}</span>
                         </h3>
                     </div>
                     <div className="post_headerDescription">
-                        <p>The goal isn't just to solve the problems, the goal is to solve the problems in the best possible way.</p>
+                        <p>{tweet_text}</p>
                     </div>
                 </div> 
-                <img src="https://pbs.twimg.com/media/E3SnvoDVEAkDFIb?format=jpg&name=large" alt="post media"/>
+                <img src={image} alt="post media"/>
                 <div className="post_footer">
                     <ChatBubbleOutlineIcon/>
                     <RepeatIcon/>

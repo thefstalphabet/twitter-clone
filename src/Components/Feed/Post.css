@@ -2,7 +2,8 @@
     display: flex;
     align-items: flex-start;
     border: 1px solid var(--twitter-background);
-    padding-bottom: 10px;
+    /* padding-bottom: 10px; */
+    padding: 5px;
 }
 .post_avatar{
     padding: 10px;
@@ -12,7 +13,7 @@
     padding: 10px;
 }
 .post_body > img {
-    border-radius: 20px;
+    border-radius: 10px;
     width: 100%;
 }
 .post_hedaerText > h3 {

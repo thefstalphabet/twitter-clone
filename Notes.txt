@@ -1,3 +1,4 @@
 // All the NPM pakages that I have used in the clone
 1. Material UI
 2. Material UI icons
+3. react-twitter-embed

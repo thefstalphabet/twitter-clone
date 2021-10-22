@@ -10,16 +10,16 @@
 
 .feed{
     flex: 0.4;
-    border-radius: 1px solid var(--twitter-background);
     /* min-width: fit-content; */
     overflow-y: scroll;
+    border: 1px solid var(--twitter-background);
 }
 .feed_header {
     position: static;
     top: 0;
     z-index: 100;
     background-color: white;
-    border-radius: 1px solid var(--twitter-background);
+    border: 1px solid var(--twitter-background);
     padding: 15px 20px;
 }
 
